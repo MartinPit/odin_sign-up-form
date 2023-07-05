@@ -1,4 +1,62 @@
-h1 {
-  font-family: Belanosima, sans-serif;
-  font-weight: 400;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Belanosima", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+#logo {
+  filter: invert(1);
+  height: 80%;
+}
+
+.wrapper {
+  display: flex;
+
+  .form-wrapper {
+    flex: 2;
+  }
+
+  .logo-wrapper {
+    background-image: url('content/background.jpg');
+    background-size: cover;
+    height: 100vh;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .backdrop {
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      height: 7rem;
+      margin-top: 15rem;
+
+      h1 {
+        color: aliceblue;
+        letter-spacing: 2px;
+      }
+    }
+
+    .footer {
+      text-align: center;
+      display: flex;
+      color: aliceblue;
+      justify-content: center;
+      margin: 0.2rem;
+      padding: 0.2rem;
+
+      a {
+        padding-left: 0.3em;
+        padding-right: 0.3em;
+        font-weight: 400;
+      }
+    }
+  }
 }
