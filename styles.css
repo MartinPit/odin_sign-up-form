@@ -34,29 +34,69 @@ a {
 }
 .wrapper .form-wrapper .section-two {
   background-color: white;
-  border: 1px solid red;
-  height: 300px;
+  height: 320px;
+  margin: 0 -3rem 0 -3rem;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.3);
+}
+.wrapper .form-wrapper .section-two p:first-child {
+  padding: 1.2rem 3rem;
+  font-size: xx-large;
+}
+.wrapper .form-wrapper .section-two form {
+  display: flex;
+  justify-content: start;
+}
+.wrapper .form-wrapper .section-two form .stack {
+  width: clamp(8rem, 50%, 20rem);
+}
+.wrapper .form-wrapper .section-two input, .wrapper .form-wrapper .section-two label {
+  display: block;
+  margin: 0.3rem 3rem;
+}
+.wrapper .form-wrapper .section-two input {
+  margin-bottom: 1.5rem;
+  border: rgba(0, 0, 0, 0.1) 2px solid;
+  border-radius: 4px;
+  width: clamp(6rem, 80%, 20rem);
+  height: 1.5rem;
+}
+.wrapper .form-wrapper .section-two input:focus {
+  outline: none !important;
+  border: hsl(215, 36%, 35%) 2px solid;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.1);
+}
+.wrapper .form-wrapper .section-two input:not(:focus):invalid {
+  outline: none !important;
+  border: red 2px solid;
 }
 .wrapper .form-wrapper .section-three {
   padding-top: 2rem;
 }
-.wrapper .form-wrapper .section-three .button {
-  background-color: rgb(48, 71, 103);
+.wrapper .form-wrapper .section-three button {
+  background-color: hsl(215, 36%, 35%);
   color: aliceblue;
-  padding: 0.8rem 4rem;
   font-size: large;
   border: none;
   border-radius: 0.5rem;
-  width: 7.5rem;
+  width: clamp(8rem, 50%, 13rem);
   text-align: center;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.75);
+}
+.wrapper .form-wrapper .section-three button:hover {
+  background-color: hsl(215, 36%, 25%);
+}
+.wrapper .form-wrapper .section-three button:active {
+  background-color: hsl(215, 36%, 35%);
 }
 .wrapper .form-wrapper .section-three a {
   text-decoration: none;
+  color: rgb(48, 71, 103);
 }
 .wrapper .form-wrapper .section-three p {
   padding-top: 1rem;
   font-size: large;
-  color: rgb(48, 71, 103);
 }
 .wrapper .logo-wrapper {
   background-image: url("content/background.jpg");
